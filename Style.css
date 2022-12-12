@@ -4,113 +4,88 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
-}
-
-.container {
-    width: 90%;
-    margin-inline: auto;
-}
+  }
 
 header {
+    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url('../GambarTA/Header\ 1.jpg');
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Header.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.navigation {
-    width: 100%;
-}
-
-.navigation .box-navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation .box-navigation .box:nth-child(1) h1 {
-    font-size: 40px; 
-    color: white;
-}
-
-
-.navigation .box-navigation .box:nth-child(2) ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.navigation .box-navigation .box:nth-child(2) ul li {
-    list-style-type: none;
-    margin-left: 40px;
-}
-
-.navigation .box-navigation .box:nth-child(2) ul li a {
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.navigation .box-navigation .box:nth-child(2) ul li a:hover {
-    color: greenyellow;
-}
-
-/* hero style */ 
+/* hero style */
 header .hero {
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    -webkit-transform: translate(50%, -50%);
-    -moz-transform: translate(50%, -50%);
-    -ms-transform: translate(50%, -50%);
-    -o-transform: translate(50%, -50%);
-}
-
+} 
 header .hero h1 {
-    color: rgba(255, 255, 255, 0.507);
-    font-size: 54px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
     text-align: center;
 }
-
-header .hero h2 {
-    color: rgba(255, 255, 255, 0.507);
-    font-size: 38px;
-    text-align: center;
+header .hero h3 {
+    color: rgba(255, 255, 255, 0.5);
 }
 
-/* about style */ 
-.about {
+header .hero .tombol {
+    padding-top: 25px;
+    padding-left: 180px;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100%;
+    place-items: center;
+}
+  
+
+/* famous style */
+.famous {
+    display: grid;
     width: 100%;
     height: 100vh;
-    display: flex;
     align-items: center;
-}
+    background-color: #2b2d42;
+    justify-content: center;
+    scroll-behavior: smooth;
+    overflow: auto;
+    position: relative;
+  }
 
-.about .box-about {
+  .famous ::-webkit-scrollbar{
+    width: 0;
+  }
+  .famous h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    color: white;
+  }
+  
+  .famous .box-famous {
+    padding-left: 8500px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-
-.about .box-about .box:nth-child(1) {
-    padding: 30px;
-}
-
-.about .box-about .box:nth-child(1) h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-} 
-
-.about .box-about .box:nth-child(1) p {
-    line-height: 2;
-}
-
-.about .box-about .box:nth-child(2) img {
-    width: 560px;
-    height: 350px;
+  }
+  
+  .famous .box-famous .box {
+    text-align: center;
+    margin-inline: 20px;
+    color: white;
+  }
+  
+  .famous .box-famous .box img {
     border-radius: 10px;
-}
+    margin-bottom: 10px;
+  }
+
+ img {
+  width: 350px;
+ }
